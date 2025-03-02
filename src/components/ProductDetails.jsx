@@ -33,10 +33,10 @@ const ProductDetails = ({ products, addToCart }) => {
                     <p className="mt-4 text-gray-700 text-sm">{product.description || "Detailed product description not available."}</p>
                     
                     {/* Product Rating */}
-                    <div className="flex items-center space-x-2">
+                    {/* <div className="flex items-center space-x-2">
                         <span className="text-yellow-500">★★★★☆</span>
                         <span className="text-gray-500 text-sm">({product.reviews?.length || 0} reviews)</span>
-                    </div>
+                    </div> */}
 
                     {/* Add to Cart Button */}
                     <button 
@@ -46,10 +46,10 @@ const ProductDetails = ({ products, addToCart }) => {
                     </button>
                     
                     {/* Additional Product Details */}
-                    <div className="mt-4 text-gray-600 text-sm">
+                    {/* <div className="mt-4 text-gray-600 text-sm">
                         <p><strong>Category:</strong> {product.category}</p>
                         <p><strong>Brand:</strong> {product.brand}</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
