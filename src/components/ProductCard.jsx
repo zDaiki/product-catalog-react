@@ -19,7 +19,7 @@ const ProductCard = ({ product, addToCart }) => {
           </h2>
         </Link>
 
-        <p className="text-gray-700 text-sm mb-4">${product.price}</p>
+        <p className="text-gray-700 text-sm mb-4">Rs.{product.price}</p>
 
         {/* Add to Cart Button */}
         <button

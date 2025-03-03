@@ -29,7 +29,7 @@ const ProductDetails = ({ products, addToCart }) => {
                 <img src={product.image} alt={product.name} className="w-full lg:w-1/2 rounded-lg shadow-lg" />
                 <div className="lg:ml-6 mt-6 lg:mt-0 flex flex-col space-y-4">
                     <h2 className="text-3xl font-bold text-gray-800">{product.name}</h2>
-                    <p className="text-gray-600 text-lg">${product.price}</p>
+                    <p className="text-gray-600 text-lg">Rs.{product.price}</p>
                     <p className="mt-4 text-gray-700 text-sm">{product.description || "Detailed product description not available."}</p>
                     
                     {/* Product Rating */}

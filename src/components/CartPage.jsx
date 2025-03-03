@@ -17,7 +17,7 @@ const CartPage = ({ cart, handleUpdateQuantity, handleRemove, handleCart }) => {
               <img src={product.image} alt={product.name} className='w-16 h-16 object-cover rounded-lg'/>
               <div>
                 <h3 className='text-lg font-semibold'>{product.name}</h3>
-                <p className='text-gray-600'>${product.price.toFixed(2)}</p>
+                <p className='text-gray-600'>Rs.{product.price.toFixed(2)}</p>
               </div>
             </div>
 
@@ -47,7 +47,7 @@ const CartPage = ({ cart, handleUpdateQuantity, handleRemove, handleCart }) => {
       {/* Total Price */}
       <div className='flex justify-between items-center mt-6'>
         <h3 className='text-xl font-bold text-gray-800'>
-          Total: ${cart.reduce((total, product) => total + product.price * product.quantity, 0).toFixed(2)}
+          Total: Rs.{cart.reduce((total, product) => total + product.price * product.quantity, 0).toFixed(2)}
         </h3>
         <button 
           onClick={handleCart} 
