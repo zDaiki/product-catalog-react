@@ -69,7 +69,7 @@ const App = () => {
         pauseOnHover
       />
       <Navbar cartCount={cart.length} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <div className="container mx-auto p-6">
+      <div className="container mx-auto p-4 md:p-6">
         
         {/* Search and Filters */}
         <div className="flex justify-between mb-6">

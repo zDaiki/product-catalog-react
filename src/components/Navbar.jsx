@@ -4,8 +4,8 @@ import { FaShoppingCart } from 'react-icons/fa';
 
 const Navbar = ({cartCount, searchQuery, setSearchQuery}) => {
   return (
-    <nav className='bg-gray-800 p-4 fixed top-0 left-0 w-full z-50 shadow-lg'>
-        <div className='container mx-auto flex justify-between items-center'>
+    <nav className='bg-gray-800 p-2 fixed top-0 left-0 w-full z-50 shadow-lg'>
+        <div className='container mx-auto flex flex-wrap items-center justify-between'>
         <Link to="/" className='text-white text-2xl font-bold'>
               Daiki
             </Link>
@@ -13,12 +13,12 @@ const Navbar = ({cartCount, searchQuery, setSearchQuery}) => {
             <input
               type="text"
               placeholder="Search products..."
-              className="p-2 border rounded w-96 sm:w-72 lg:w-96 focus:outline-none focus:ring-2 focus:ring-blue-600"
+              className="p-2 border rounded w-full sm:w-72 md:w-96 focus:outline-none focus:ring-2 focus:ring-blue-600"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               aria-label="Search products"
           />
-            <ul className='flex space-x-6'>
+            <ul className="flex items-center space-x-4 mt-2 md:mt-0">
                 <li><Link to="/" className="text-white hover:underline mr-8">Home</Link></li>
                 {/* <li><Link to="/products" className="text-white hover:underline">Products</Link></li> */}
                 <li><Link
